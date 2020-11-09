@@ -6,8 +6,9 @@ const bodyParser = require('body-parser');
 const { Server } = require('./sockets/server');
 //const server  = new Server();
 const server  = Server.instance;
-       
 
+//const port = process.env.PORT || 3000;       
+//const { IP_SERVER } = require("./config/defecto");
 
 // importando cors
 const cors = require('cors');
@@ -62,6 +63,7 @@ server.app.use('/api/login', require('./routes/auth') );
 
 // escuchar peticiones
 server.start( ()=>{
+    //console.log(`http://${IP_SERVER}:${port}/api/`);
     console.log('Servidor corriendo en el puerto 3000');
 }); 
 // server.app.listen(3000, () => {

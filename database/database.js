@@ -2,18 +2,18 @@ const mysql = require('mysql');
 
 // coneccion a la BD
 const mysqlConnection = mysql.createConnection({
-    // host: '168.235.83.190',
-    // user: 'app_docente',
-    // password: '14789UGELadmin',
-    // database: 'app_inci',
-    // insecureAuth : true,
-    // multipleStatements: true
-    host: 'us-cdbr-east-02.cleardb.com',
-    user: 'bee428e5551175',
-    password: '8b39bd38',
-    database: 'heroku_2e58d4390490c39',
+    host: '168.235.83.190',
+    user: 'app_docente',
+    password: '14789UGELadmin',
+    database: 'app_inci',
     insecureAuth : true,
     multipleStatements: true
+    // host: 'us-cdbr-east-02.cleardb.com',
+    // user: 'bee428e5551175',
+    // password: '8b39bd38',
+    // database: 'heroku_2e58d4390490c39',
+    // insecureAuth : true,
+    // multipleStatements: true
 });
 
 //mysql://:@/?reconnect=true
